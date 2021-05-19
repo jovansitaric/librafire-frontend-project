@@ -1,0 +1,26 @@
+.website-wrapper {
+    max-width: $desktop-wrapper-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    font-size: 0;
+}
+
+.navigation-wrapper {
+    max-width: $desktop-wrapper-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+%clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        clear: both;
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
