@@ -1,0 +1,27 @@
+.navigation-top {
+  background-color: $main-color;
+  min-height: 50px;
+  text-align: center;
+}
+
+.navigation-top__message {
+  font-size: 1.125em;
+  color: $main-text-color;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0.625em;
+  position: relative;
+  @include inline-block;
+  &:before {
+    content: url("../shapes/linija\ 3-1.svg");
+    margin-right: 0.625em;
+  }
+  &:after {
+    content: url("../shapes/linija\ 3.svg");
+    margin-left: 0.625em;
+  }
+}
+
+.navigation-main {
+    min-height: 119px;
+}

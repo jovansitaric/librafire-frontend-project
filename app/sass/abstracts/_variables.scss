@@ -3,3 +3,18 @@ $tablet-wrapper-width: 708px;
 $mobile-wrapper-width: 360px;
 
 $desktop-wrapper-width: 1024px;
+
+// Colors
+$color-white: hsl(0, 0%, 100%);
+$color-sandal: hsl(41, 25%, 57%);
+$color-ebony-clay: hsl(235, 21%, 21%);
+$color-tundora: hsl(0, 0%, 26%);
+$color-white-shade-one: hsla(0, 0%, 100%, 0.29%);
+$color-muddy-waters: hsl(41, 37%, 52%);
+$color-black: hsl(0, 0%, 0%);
+$color-putty: hsl(41, 61%, 72%);
+$color-dove-gray: hsl(0, 0%, 44%);
+
+// Functional declaration
+$main-color: $color-sandal;
+$main-text-color: $color-white;

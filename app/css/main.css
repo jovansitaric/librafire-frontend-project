@@ -3,13 +3,202 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
-  font-size: 0;
 }
 
-.navigation-wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
+.website-wrapper--position-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+[hidden*="true"],
+[hidden*="hidden"] {
+  display: none !important;
+}
+
+.navigation-top {
+  background-color: #ad9b76;
+  min-height: 50px;
+  text-align: center;
+}
+
+.navigation-top__message {
+  font-size: 1.125em;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0.625em;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation-top__message:before {
+  content: url("../shapes/linija 3-1.svg");
+  margin-right: 0.625em;
+}
+
+.navigation-top__message:after {
+  content: url("../shapes/linija 3.svg");
+  margin-left: 0.625em;
+}
+
+.navigation-main {
+  min-height: 119px;
+}
+
+.hero-section {
+  min-height: 894px;
 }
 /*# sourceMappingURL=main.css.map */
