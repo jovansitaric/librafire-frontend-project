@@ -1,3 +1,25 @@
 .hero-section {
-    min-height: 894px;
+  min-height: 894px;
+}
+
+.hero-section__text {
+  position: relative;
+  top: 119px;
+  color: $main-color;
+  @include breakpoint(992px) {
+    padding-top: 20.375em;
+  }
+}
+
+.hero-section__text-heading {
+    font-size: 5.3125em;
+    color: $color-white;
+    max-width: 62%;
+}
+
+.hero-section__text-paragraph {
+  font-size: 0.875em;
+  max-width: 43%;
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
 }

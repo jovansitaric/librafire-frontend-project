@@ -195,8 +195,16 @@ table {
 }
 
 a,
-span {
+span,
+h1,
+h2,
+h3,
+h4 {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -510,6 +518,31 @@ a:hover {
 
 .hero-section {
   min-height: 894px;
+}
+
+.hero-section__text {
+  position: relative;
+  top: 119px;
+  color: #ad9b76;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero-section__text {
+    padding-top: 20.375em;
+  }
+}
+
+.hero-section__text-heading {
+  font-size: 5.3125em;
+  color: white;
+  max-width: 62%;
+}
+
+.hero-section__text-paragraph {
+  font-size: 0.875em;
+  max-width: 43%;
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
 }
 
 .main-button {
