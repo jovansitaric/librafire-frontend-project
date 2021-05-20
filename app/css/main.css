@@ -7,6 +7,7 @@
 
 .website-wrapper--position-fixed {
   position: fixed;
+  z-index: 9999;
   left: 0;
   right: 0;
 }
@@ -205,6 +206,7 @@ h4 {
 
 p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 0.875em;
 }
 
 a {
@@ -522,13 +524,18 @@ a:hover {
 
 .hero-section__text {
   position: relative;
-  top: 119px;
   color: #ad9b76;
 }
 
 @media only screen and (min-width: 992px) {
   .hero-section__text {
     padding-top: 20.375em;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero-section__text {
+    top: 119px;
   }
 }
 
@@ -539,7 +546,6 @@ a:hover {
 }
 
 .hero-section__text-paragraph {
-  font-size: 0.875em;
   max-width: 43%;
   margin-top: 1.875em;
   margin-bottom: 1.875em;
@@ -547,10 +553,12 @@ a:hover {
 
 .main-button {
   border-radius: 23px;
-  font-size: 1em;
   background-color: #ad9b76;
+  font-size: 1em;
   padding: 0.75em 1.21875em;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main-button:hover {
@@ -558,13 +566,38 @@ a:hover {
   background-color: white;
 }
 
-.section-144__image {
-  width: 455px;
-  height: 503px;
+.section-144 {
+  font-size: 0;
+  color: #ad9b76;
+}
+
+.section-144__column {
+  font-size: 16px;
+}
+
+.section-144__paragraph {
+  color: #424242;
+  padding: 1.875em 0;
+}
+
+.section-144__button:hover {
+  background-color: #2a2c41;
+  color: white;
 }
 
 .section-144__image-shape {
   position: relative;
+  width: 455px;
+  height: 593px;
+  background-position: 64% bottom;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 1025px) {
+  .section-144__image-shape {
+    top: -8.3em;
+  }
 }
 
 .section-144__image-shape:after {
@@ -574,7 +607,11 @@ a:hover {
   top: -25px;
   border: 2px solid #ad9b76;
   width: 455px;
-  height: 503px;
+  height: 593px;
+}
+
+.section-144__heading {
+  font-size: 2.5em;
 }
 
 @media only screen and (min-width: 600px) {

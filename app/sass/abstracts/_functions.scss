@@ -5,6 +5,7 @@
   width: 100%;
   @at-root .website-wrapper--position-fixed {
     position: fixed;    
+    z-index: 9999;
     left: 0;
     right: 0;
   }

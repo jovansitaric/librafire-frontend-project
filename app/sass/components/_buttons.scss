@@ -1,11 +1,12 @@
 .main-button {
-    border-radius: 23px;
-    font-size: 1em;
-    background-color: $main-color;
-    padding: 0.75em 1.21875em;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    &:hover {
-        color: $color-black;
-        background-color: $color-white;
-    }
+  border-radius: 23px;
+  background-color: $main-color;
+  font-size: 1em;
+  padding: 0.75em 1.21875em;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  @include inline-block;
+  &:hover {
+    color: $color-black;
+    background-color: $color-white;
+  }
 }
