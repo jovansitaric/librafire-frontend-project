@@ -1,0 +1,17 @@
+.section-144__image {
+    width: $section-144-image-width;
+    height: $section-144-image-height;
+}
+
+.section-144__image-shape {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    border: 2px solid $main-color;
+    width: $section-144-image-width;
+    height: $section-144-image-height;
+  }
+}

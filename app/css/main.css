@@ -512,6 +512,38 @@ a:hover {
   min-height: 894px;
 }
 
+.main-button {
+  border-radius: 23px;
+  font-size: 1em;
+  background-color: #ad9b76;
+  padding: 0.75em 1.21875em;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.main-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.section-144__image {
+  width: 455px;
+  height: 503px;
+}
+
+.section-144__image-shape {
+  position: relative;
+}
+
+.section-144__image-shape:after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  border: 2px solid #ad9b76;
+  width: 455px;
+  height: 503px;
+}
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .col-small-1 {
