@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LibraFire internship test</title>
-    <link rel="stylesheet" href="app/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="app/css/main.css" />
+  </head>
+  <body>
     <!-- Start header -->
     <header class="navigation">
-        <!-- Start top nav -->
-        <div class="navigation-top">
-            <div class="website-wrapper">
-                <span class="navigation-top__message">We are open! Book your table now!</span>
-            </div>
+      <!-- Start top nav -->
+      <div class="navigation-top">
+        <div class="website-wrapper">
+          <span class="navigation-top__message"
+            >We are open! Book your table now!</span
+          >
         </div>
-        <!-- End top nav -->
-        <!-- Start main nav -->
-        <div class="website-wrapper website-wrapper--position-fixed">
-            <nav class="navigation-main">
-                <div class="navigation-main__logo">
-                    <img src="app/images/Logo%20Beli.png" alt="logo" class="navigation-main__logo-image">
-                </div>
-                <div class="navigation-main__info">
-                    <ul class="navigation-main__info-list">
-                        <li class="navigation-main__info-list-item"></li>
-                        <li class="navigation-main__info-list-item"></li>
-                        <ul class="navigation-main__info-social">
-                            <li class="navigation-main__info-social-icon"></li>
-                            <li class="navigation-main__info-social-icon"></li>
-                            <li class="navigation-main__info-social-icon"></li>
-                        </ul>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- End main nav -->
+      </div>
+      <!-- End top nav -->
+      <!-- Start main nav -->
+      <div class="website-wrapper website-wrapper--position-fixed">
+        <nav class="navigation-main">
+          <div class="navigation-main__logo">
+            <a href="javascript:;" class="navigation-main__logo-link">
+                <img
+                src="app/images/Logo%20Beli.png"
+                alt="logo"
+                class="navigation-main__logo-image"
+                />
+            </a>
+          </div>
+          <div class="navigation-main__info">
+            <ul class="navigation-main__info-list-wrapper">
+              <ul class="navigation-main__info-list">
+                <li class="navigation-main__info-list-item">
+                    <span class="icon-Icon-material-phone icons"></span><a href="tel:02089402247" class="navigation-main__info-list-item-link">020 89402247</a>
+                </li>
+                <li class="navigation-main__info-list-item">
+                    <span class="icon-Icon-zocial-email icons"></span><a href="mailto:booking@144onthehill.co.uk" class="navigation-main__info-list-item-link">booking@144onthehill.co.uk</a>
+                </li>
+            </ul>
+              <ul class="navigation-main__info-social">
+                <li class="navigation-main__info-social-icon"><a href="javascript:;" class="navigation-main__info-social-icon-link icons icon-Icon-metro-facebook"></a></li>
+                <li class="navigation-main__info-social-icon"><a href="javascript:;" class="navigation-main__info-social-icon-link icons icon-Twitter"></a></li>
+                <li class="navigation-main__info-social-icon"><a href="javascript:;" class="navigation-main__info-social-icon-link icons icon-XMLID_505"></a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="navigation-main__menu">
+              <ul class="navigation-main__menu-list">
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link navigation-main__menu-list--active">Home</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">About Us</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Menu</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Booking</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Takeaway</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Gift Voucher</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Careers</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Account</a></li>
+                  <li class="navigation-main__menu-list-item"><a href="javascript:;" class="navigation-main__menu-list-link">Contact</a></li>
+              </ul>
+          </div>
+          <span class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+        </nav>
+      </div>
+      <!-- End main nav -->
     </header>
     <!-- End header -->
     <!-- Start Hero section -->
-    <section class="hero-section" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(app/images/5006.png);">
-
-    </section>
+    <section
+      class="hero-section"
+      style="
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(app/images/5006.png);
+      "
+    ></section>
     <!-- End Hero section -->
-</body>
+    <script src="app/js/hamburger.js"></script>
+  </body>
 </html>

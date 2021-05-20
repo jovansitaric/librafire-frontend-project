@@ -1,0 +1,58 @@
+.navigation-main__menu {
+  @include breakpoint("mobile-tablet") {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.navigation-main__menu-list {
+  float: right;
+  padding-top: 1.125em;
+  text-align: right;
+  @extend %clearfix;
+  @include breakpoint("small-laptop") {
+    font-size: 0.7125em;
+  }
+  @include breakpoint("mobile-tablet") {
+    text-align: center;
+  }
+}
+
+.navigation-main__menu-list-item {
+  font-size: 1.125em;
+  position: relative;
+  @include breakpoint(992px) {
+    margin-right: 1.875em;
+    @include inline-block;
+    &:last-of-type() {
+      margin-right: 0;
+    }
+  }
+  @include breakpoint("mobile-tablet") {
+    margin-bottom: 0.875em;
+    &:last-of-type() {
+        margin-bottom: 0;
+    }
+  }  
+  @at-root .navigation-main__menu-list--active {
+    color: $main-color;
+    @include breakpoint(992px) {
+      &:after {
+        content: "\2022";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 1.375em;
+        pointer-events: none;
+        @include transform(translate(-50%, 75%));
+      }
+    }
+  }
+}
+
+.navigation-main__menu-list-link {
+  font-size: 1.125em;
+}

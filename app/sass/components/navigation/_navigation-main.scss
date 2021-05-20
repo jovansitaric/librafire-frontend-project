@@ -1,0 +1,75 @@
+.navigation-main {
+  padding-top: 1.25em;
+}
+
+.navigation-main__logo,
+.navigation-main__info {
+  @include inline-block;
+}
+
+.navigation-main__logo-link {
+  &:hover {
+    @include opacity;
+  }
+}
+
+.navigation-main__logo {
+  float: left;
+  @extend %clearfix;
+}
+
+.navigation-main__info {
+  border-bottom: 1px solid $color-dove-gray;
+  padding-bottom: 1.125em;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  float: right;
+  width: 82%;
+  @extend %clearfix;
+  @include breakpoint("desktop") {
+    width: 88%;
+  }
+}
+
+.navigation-main__info-list-wrapper {
+  float: right;
+  @extend %clearfix;
+}
+
+.navigation-main__info-list {
+  @include inline-block;
+}
+
+.navigation-main__info-list-item {
+  font-size: 0.875em;
+  @include inline-block;
+  &:after {
+    content: "";
+    border: 1px solid white;
+    margin: 0 1.25em;
+    height: 14px;
+    @include inline-block;
+  }
+  &.icon-Icon-zocial-email:before {
+    font-size: 0.5625em;
+  }
+}
+
+.navigation-main__info-list-item-link {
+  margin-left: 0.625em;
+}
+
+.navigation-main__info-social {
+  @include inline-block;
+}
+
+.navigation-main__info-social-icon {
+  margin-right: 0.625em;
+  @include inline-block;
+  &:last-of-type() {
+    margin-right: 0;
+  }
+}
+
+.navigation-main__info-social-icon-link {
+  @include transition;
+}

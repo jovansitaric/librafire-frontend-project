@@ -3,7 +3,14 @@
 @import "abstracts/mixins";
 
 @import "base/reset";
+@import "base/typography";
+@import "base/icons";
 
-@import "components/navigation-top";
-@import "components/navigation-main";
+@import "components/navigation/navigation-top";
+@import "components/navigation/navigation-main";
+@import "components/navigation/navigation-main-menu";
+@import "components/navigation/hamburger-menu";
+
 @import "components/hero-section";
+
+@import "layout/grid";
