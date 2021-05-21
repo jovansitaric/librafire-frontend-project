@@ -1,6 +1,9 @@
 .section-144 {
   font-size: 0;
   color: $main-color;
+  @include breakpoint("phone") {
+    text-align: center;
+  }
 }
 
 .section-144__column {
@@ -29,6 +32,9 @@
   @include breakpoint("desktop") {
     top: -8.3em;
   }
+  @include breakpoint("mobile-tablet") {
+    margin-top: 3.125em;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -40,6 +46,6 @@
   }
 }
 
-.section-144__heading {
-  font-size: 2.5em;
+.section-144__heading {  
+  @extend .section-heading;
 }

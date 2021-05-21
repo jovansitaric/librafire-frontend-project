@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Regular.eot");
-  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
-    url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Playfair Display";
+    src: url("../fonts/PlayfairDisplay-Regular.eot");
+    src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+        url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+        url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.eot");
-  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Roboto-Regular.woff2") format("woff2"),
-    url("../fonts/Roboto-Regular.woff") format("woff"),
-    url("../fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.eot");
+    src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../fonts/Roboto-Regular.woff") format("woff"),
+        url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 a,
@@ -29,30 +29,62 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 0.875em;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
 }
 
 a {
-  text-decoration: none;
-  color: $main-text-color;
-  @include transition;
-  &:hover {
-    opacity: 0.9;
-    color: $main-color;
+    text-decoration: none;
+    color: $main-text-color;
+    @include transition;
+    &:hover {
+        opacity: 0.9;
+        color: $main-color;
+    }
+}
+
+.section-heading {
+    font-size: 2.5em;
+}
+
+// Styles
+.sections {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sections-mobile {
+    @include breakpoint("phone") {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
   }
+
+.main-background-color {
+    background-color: $main-color;
+}
+.main-color {
+    color: $main-color;
+}
+
+.white-background-color {
+    background-color: $color-white;
+}
+.white-color {
+    color: $color-white;
 }
 
 .icons {
-  &:before {
-    @include transition;
-    font-size: 0.6875em;
-  }
-  &:hover:before {
-    color: $main-color;
-  }
+    &:before {
+        @include transition;
+        font-size: 0.6875em;
+    }
+    &:hover:before {
+        color: $main-color;
+    }
 }
