@@ -28,7 +28,7 @@
         }
     }    
     @else if $value == "desktop" {
-        @media only screen and (min-width: 1025px) {
+        @media only screen and (min-width: 1024px) {
             @content;
         }
     } 
@@ -38,7 +38,7 @@
         }
     } 
     @else if $value == "ex-large-desktop" {
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 1920px) {
             @content;
         }
     }    

@@ -1,20 +1,28 @@
+// Style logic
 @import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
+// Base styles
 @import "base/reset";
 @import "base/typography";
 @import "base/icons";
 
+// Navigation main Components
 @import "components/navigation/navigation-top";
 @import "components/navigation/navigation-main";
 @import "components/navigation/navigation-main-menu";
 @import "components/navigation/hamburger-menu";
 
+// Components
 @import "components/hero-section";
 @import "components/buttons";
 
+// Home page
 @import "pages/home/section-144";
-@import "pages/home/section-drink-dine";
+@import "pages/home/section-offset-images";
+@import "pages/home/section-explore";
+@import "pages/home/section-offset-images-two";
 
+// Layout
 @import "layout/grid";

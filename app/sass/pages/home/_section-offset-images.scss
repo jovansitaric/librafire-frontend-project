@@ -1,0 +1,63 @@
+.section-offset-images {
+    font-size: 0;
+    min-height: $section-offset-images-height;
+    color: $main-text-color;
+    margin-bottom: 90px;
+    @include breakpoint("desktop") {
+        max-width: 1509px;
+    }
+    // Inherit min height
+    @at-root .section-offset-images__image {
+        min-height: $section-offset-images-height;
+    }
+}
+
+.section-offset-images__column {
+    min-height: inherit;
+    display: block;
+    width: 100%;
+    @include breakpoint(1024px) {
+        @include inline-block;
+    }
+    &:first-of-type() {
+        width: 66.66%;
+        @include breakpoint(1509px) {
+            min-width: 1024px;
+            width: 100%;
+            max-width: 1024px;
+        }
+        @include breakpoint("mobile-laptop") {
+            width: 100%;
+        }
+    }
+    &:last-of-type() {
+        width: 33.33%;
+        @include breakpoint(1509px) {
+            max-width: 485px;
+            width: 485px;
+        }
+        @include breakpoint("mobile-laptop") {
+            width: 100%;
+        }
+    }
+}
+
+.section-offset-images__article {
+    font-size: 16px;
+    max-width: 100%;
+    background-color: $main-color;
+    padding: 40px;
+    // Solution offset
+    padding-top: 40px + 13px;
+    padding-bottom: 40px - 13px;
+    min-height: inherit;
+}
+
+.section-offset-images__article-heading {
+    @extend .section-heading;
+}
+
+.section-offset-images__article-paragraph {
+    margin-top: 30px;
+    line-height: 25px;
+}
