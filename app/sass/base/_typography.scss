@@ -67,9 +67,11 @@ a {
 }
 
 .padding-mobile-tablet {
+  @include breakpoint("mobile-tablet") {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
 }
 
 .main-background-color {

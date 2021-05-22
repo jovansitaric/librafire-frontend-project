@@ -238,10 +238,12 @@ a:hover {
   }
 }
 
-.padding-mobile-tablet {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+@media only screen and (max-width: 991px) {
+  .padding-mobile-tablet {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .main-background-color {
