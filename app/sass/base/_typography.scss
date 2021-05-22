@@ -39,7 +39,7 @@ p {
 
 time {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size:  0.875em;
+  font-size: 0.875em;
 }
 
 a {
@@ -77,6 +77,14 @@ section {
 
 .padding-mobile-tablet {
   @include breakpoint("mobile-tablet") {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.padding-mobile-laptop {
+  @include breakpoint("mobile-laptop") {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;

@@ -13,8 +13,8 @@
 }
 
 .secondary-button {
-  @extend .main-button;
   @include inline-block;
+  @extend .main-button;
   &:hover {
     background-color: $color-ebony-clay;
     color: $color-white;

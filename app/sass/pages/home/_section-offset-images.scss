@@ -1,68 +1,71 @@
 .section-offset-images {
-    font-size: 0;
-    display: flex;
+  font-size: 0;
+  display: flex;
+  min-height: $section-offset-images-height;
+  margin-bottom: 90px;
+  @include breakpoint("desktop") {
+    max-width: 1509px;
+  }
+  @include breakpoint("mobile-laptop") {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  @at-root .section-offset-images--margin-left-auto {
+    margin-left: auto;
+  }
+  // Inherit min height
+  @at-root .section-offset-images__image {
     min-height: $section-offset-images-height;
-    margin-bottom: 90px;
-    @include breakpoint("desktop") {
-        max-width: 1509px;
-    }
-    @at-root .section-offset-images--margin-left-auto {
-        margin-left: auto;
-    }
-    // Inherit min height
-    @at-root .section-offset-images__image {
-        min-height: $section-offset-images-height;
-    }    
+  }
 }
 
 .section-offset-images__column {
-    min-height: inherit;
-    display: block;
-    width: 100%;
-    @include breakpoint(1024px) {
-        @include inline-block;
+  min-height: inherit;
+  display: block;
+  width: 100%;
+  @include breakpoint(1024px) {
+    @include inline-block;
+  }
+  &:first-of-type() {
+    width: 66.66%;
+    @include breakpoint(1509px) {
+      width: 100%;
+      max-width: 1024px;
     }
-    &:first-of-type() {
-        width: 66.66%;
-        @include breakpoint(1509px) {
-            min-width: 1024px;
-            width: 100%;
-            max-width: 1024px;
-        }
-        @include breakpoint("mobile-laptop") {
-            width: 100%;
-        }
+    @include breakpoint("mobile-laptop") {
+      width: 100%;
     }
-    &:last-of-type() {
-        width: 33.33%;
-        @include breakpoint(1509px) {
-            max-width: 485px;
-            width: 485px;
-        }
-        @include breakpoint("mobile-laptop") {
-            width: 100%;
-        }
+  }
+  &:last-of-type() {
+    width: 33.33%;
+    @include breakpoint(1509px) {
+      max-width: 485px;
+      width: 485px;
     }
-    @at-root .section-offset-images__column--flex-order-2 {
-        order: 2;
+    @include breakpoint("mobile-laptop") {
+      width: 100%;
     }
+  }
+  @at-root .section-offset-images__column--flex-order-2 {
+    order: 2;
+  }
 }
 
 .section-offset-images__article {
-    font-size: 16px;
-    max-width: 100%;
-    padding: 40px;
-    // Solution offset
-    padding-top: 40px + 13px;
-    padding-bottom: 40px - 13px;
-    min-height: inherit;
+  font-size: 16px;
+  max-width: 100%;
+  padding: 40px;
+  // Solution offset
+  padding-top: 40px + 13px;
+  padding-bottom: 40px - 13px;
+  min-height: inherit;
 }
 
 .section-offset-images__article-heading {
-    @extend .section-heading;
+  @extend .section-heading;
 }
 
 .section-offset-images__article-paragraph {
-    margin-top: 30px;
-    line-height: 25px;
+  margin-top: 30px;
+  line-height: 25px;
 }
