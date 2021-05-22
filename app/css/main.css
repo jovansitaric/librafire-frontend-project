@@ -12,12 +12,12 @@
   right: 0;
 }
 
-.navigation-main__logo:before, .navigation-main__info:before, .navigation-main__info-list-wrapper:before, .navigation-main__menu-list:before, .hamburger:before, .navigation-main__logo:after, .navigation-main__info:after, .navigation-main__info-list-wrapper:after, .navigation-main__menu-list:after, .hamburger:after {
+.navigation-main__logo:before, .navigation-main__info:before, .navigation-main__info-list-wrapper:before, .navigation-main__menu-list:before, .hamburger:before, .section-reviews__content-date:before, .navigation-main__logo:after, .navigation-main__info:after, .navigation-main__info-list-wrapper:after, .navigation-main__menu-list:after, .hamburger:after, .section-reviews__content-date:after {
   content: " ";
   display: table;
 }
 
-.navigation-main__logo:after, .navigation-main__info:after, .navigation-main__info-list-wrapper:after, .navigation-main__menu-list:after, .hamburger:after {
+.navigation-main__logo:after, .navigation-main__info:after, .navigation-main__info-list-wrapper:after, .navigation-main__menu-list:after, .hamburger:after, .section-reviews__content-date:after {
   clear: both;
 }
 
@@ -209,6 +209,11 @@ p {
   font-size: 0.875em;
 }
 
+time {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 0.875em;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -221,7 +226,11 @@ a:hover {
   color: #ad9b76;
 }
 
-.section-heading, .section-144__heading, .section-offset-images__article-heading, .section-explore__heading {
+section {
+  color: #ad9b76;
+}
+
+.section-heading, .section-144__heading, .section-offset-images__article-heading, .section-explore__heading, .section-reviews__content-main-heading {
   font-size: 2.5em;
 }
 
@@ -328,7 +337,6 @@ a:hover {
 
 .icon-Icon-ionic-ios-arrow-round-forward:before {
   content: "\e905";
-  color: #fff;
 }
 
 .navigation-top {
@@ -931,6 +939,119 @@ a:hover {
   min-height: 305px;
   background-position: right 52%;
   background-repeat: no-repeat;
+}
+
+.section-reviews {
+  min-height: 494px;
+  font-size: 0;
+  padding: 106px 0;
+}
+
+.section-reviews__content-column {
+  vertical-align: top !important;
+}
+
+.section-reviews__content-column,
+.section-reviews__content-arrows,
+.section-reviews__content-headings {
+  font-size: 16px;
+}
+
+.section-reviews__content-main-heading {
+  margin-bottom: 30px;
+}
+
+.section-reviews__content-main-heading:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border-top: 1px solid white;
+  margin: 0 1rem;
+  margin-right: 1rem;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  max-width: 72%;
+  width: 100%;
+  margin-left: 30px;
+  top: 6px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-reviews__content-main-heading:after {
+    max-width: 82%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section-reviews__content-reviews-article {
+    margin: 20px;
+  }
+}
+
+.section-reviews__content-reviews-article-secondary-heading {
+  font-size: 1.5625em;
+}
+
+.section-reviews__content-reviews-article-paragraph {
+  margin: 30px 0;
+}
+
+.section-reviews__content-arrows {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-reviews__content-arrows-icons {
+  border-radius: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #2a2c41;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 0.625em;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.section-reviews__content-arrows-icons:hover {
+  color: #2a2c41;
+  background-color: white;
+}
+
+.section-reviews__content-arrows-icons:last-of-type {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 0;
+}
+
+.section-reviews__content-arrows-icons:before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-reviews__content-stars,
+.section_reviews__content-date {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section_reviews__content-star {
+  font-size: 1.0625em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.section-reviews__content-date {
+  float: right;
 }
 
 @media only screen and (min-width: 600px) {

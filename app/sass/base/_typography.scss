@@ -37,6 +37,11 @@ p {
   font-size: 0.875em;
 }
 
+time {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size:  0.875em;
+}
+
 a {
   text-decoration: none;
   color: $main-text-color;
@@ -45,6 +50,10 @@ a {
     opacity: 0.9;
     color: $main-color;
   }
+}
+
+section {
+  color: $main-color;
 }
 
 // Extending classes
