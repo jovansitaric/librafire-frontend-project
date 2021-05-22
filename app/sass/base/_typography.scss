@@ -75,7 +75,12 @@ a {
 }
 
 .main-background-color {
+  color: $main-text-color;
   background-color: $main-color;
+}
+.secondary-background-color {
+  color: $main-text-color;
+  background-color: $secondary-color;
 }
 .main-color {
   color: $main-color;

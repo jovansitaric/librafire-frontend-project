@@ -1,81 +1,102 @@
 .section-explore {
-  background-color: $color-ebony-clay;
-  color: $main-text-color;
-  padding-top: $section-explore-height / 4;
-  padding-bottom: $section-explore-height / 4;
-  text-align: center;
-  @include breakpoint("desktop") {
-    height: $section-explore-height;
-  }
+    padding-top: $section-explore-height / 4;
+    padding-bottom: $section-explore-height / 4;
+    text-align: center;
+    @include breakpoint("desktop") {
+        height: $section-explore-height;
+        margin-bottom: $section-explore-height;
+    }
 }
 
 .section-explore__heading {
-  @extend .section-heading;
-  &:before,
-  &:after {
-    display: inline-block;
-    content: "";
-    border-top: 1px solid $color-white;
-    width: 19%;
-    max-width: 326px;
-    margin: 0 1rem;
-    transform: translateY(-1rem);
-    @include breakpoint("large-desktop") {
-      width: 100%;
+    @extend .section-heading;
+    &:before,
+    &:after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        border-top: 1px solid $color-white;
+        width: 19%;
+        max-width: 356px;
+        margin: 0 1rem;
+        transform: translateY(-1rem);
+        @include breakpoint("large-desktop") {
+            width: 100%;
+        }
+        @include breakpoint("phone") {
+            display: none;
+        }
     }
-    @include breakpoint("phone") {
-      display: none;
+    &:before {
+        margin-right: 11px;
+        left: -30px;
     }
-  }
-  &:before {
-    margin-right: 41.5px;
-  }
-  &:after {
-    margin-left: 41.5px;
-  }
+    &:after {
+        margin-left: 11px;
+        right: -30px;
+    }
 }
 
 .section-explore__paragraph {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 582px;
-  line-height: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 582px;
+    line-height: 25px;
 }
 
 .section-explore__images {
-  font-size: 0;
-  min-height: $section-explore-images-height;
-  @at-root .section-explore__images-column {
-    width: 100%;
-    min-height: inherit;
-  }
+    font-size: 0;
+    min-height: $section-explore-images-height;
+    @at-root .section-explore__images-column {
+        width: 100%;
+        min-height: inherit;
+    }
 }
 
 .section-explore__images-image {
-  margin-top: 30px;
-  height: $section-explore-images-height;
-  background-repeat: no-repeat;
-  background-position: 27% 56%;
-  @include breakpoint("mobile-laptop") {
-    width: 48%;
     margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 240px;
-  }
-  @include breakpoint("desktop") {
-    margin-right: 30px;
-    width: auto;
-  }
-  @include breakpoint("phone") {
-    width: 64%;
-  }
-  @at-root .section-explore__images--background-position-left {
-    background-position: 77% center;
-  }
-  @at-root .section-explore__images--background-position-right {
-    background-position: left center;
-  }
+    height: $section-explore-images-height;
+    background-repeat: no-repeat;
+    background-position: 27% 56%;
+    @include breakpoint("mobile-laptop") {
+        width: 48%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 240px;
+    }
+    @include breakpoint("desktop") {
+        margin-right: 30px;
+        width: auto;
+    }
+    @include breakpoint("phone") {
+        width: 64%;
+    }
+    @at-root .section-explore__images--background-position-left {
+        background-position: 77% center;
+    }
+    @at-root .section-explore__images--background-position-right {
+        background-position: left center;
+        @include breakpoint("desktop") {
+            margin-right: 0;
+        }
+    }
+}
+
+.section-explore__shape {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 25px;
+        top: 55px;
+        border: 2px solid $main-color;
+        width: 95%;
+        height: $section-explore-images-height;
+        @include breakpoint("mobile-laptop") {
+            display: none;
+        }
+    }
 }

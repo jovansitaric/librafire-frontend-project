@@ -1,15 +1,18 @@
 .section-offset-images {
     font-size: 0;
+    display: flex;
     min-height: $section-offset-images-height;
-    color: $main-text-color;
     margin-bottom: 90px;
     @include breakpoint("desktop") {
         max-width: 1509px;
     }
+    @at-root .section-offset-images--margin-left-auto {
+        margin-left: auto;
+    }
     // Inherit min height
     @at-root .section-offset-images__image {
         min-height: $section-offset-images-height;
-    }
+    }    
 }
 
 .section-offset-images__column {
@@ -40,12 +43,14 @@
             width: 100%;
         }
     }
+    @at-root .section-offset-images__column--flex-order-2 {
+        order: 2;
+    }
 }
 
 .section-offset-images__article {
     font-size: 16px;
     max-width: 100%;
-    background-color: $main-color;
     padding: 40px;
     // Solution offset
     padding-top: 40px + 13px;

@@ -1,0 +1,23 @@
+.section-takeaway {
+    min-height: $section-offset-images-height-second;
+}
+
+.section-takeaway__button {
+    margin-top: 30px;
+}
+
+.section-takeaway__button-icon {
+    margin-left: 20px;
+    transform: rotate(180deg);
+    font-size: 0.625em;
+    @include inline-block;
+    &:before {
+        color: inherit;
+    }
+}
+
+.section-takeaway__image {
+    min-height: $section-offset-images-height-second;
+    background-position: right 52%;
+    background-repeat: no-repeat;
+}

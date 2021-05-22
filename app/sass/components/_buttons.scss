@@ -4,6 +4,16 @@
   font-size: 1em;
   padding: 0.75em 1.21875em;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  @include inline-block;
+  &:hover {
+    color: $secondary-color;
+    background-color: $color-white;
+  }
+}
+
+.secondary-button {
+  @extend .main-button;
   @include inline-block;
   &:hover {
     color: $color-black;
