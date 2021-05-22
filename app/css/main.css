@@ -230,7 +230,7 @@ section {
   color: #ad9b76;
 }
 
-.section-heading, .section-144__heading, .section-offset-images__article-heading, .section-explore__heading, .section-reviews__content-main-heading {
+.section-heading, .section-144__heading, .section-offset-images__article-heading, .section-explore__heading, .section-reviews__content-main-heading, .section-instagram__content-heading {
   font-size: 2.5em;
 }
 
@@ -633,13 +633,12 @@ section {
 }
 
 .secondary-button:hover {
-  color: black;
-  background-color: white;
+  background-color: #2a2c41;
+  color: white;
 }
 
 .section-144 {
   font-size: 0;
-  color: #ad9b76;
 }
 
 @media only screen and (min-width: 120px) and (max-width: 767px) {
@@ -655,11 +654,6 @@ section {
 .section-144__paragraph {
   color: #424242;
   padding: 30px 0;
-}
-
-.section-144__button:hover {
-  background-color: #2a2c41;
-  color: white;
 }
 
 .section-144__image-shape {
@@ -1052,6 +1046,18 @@ section {
 
 .section-reviews__content-date {
   float: right;
+}
+
+.section-instagram {
+  padding: 106px 0;
+}
+
+.section-instagram__content-headings, .section-instagram__content-footer {
+  font-size: 16px;
+}
+
+.section-instagram__content-footer {
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {

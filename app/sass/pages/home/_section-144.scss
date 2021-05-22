@@ -1,6 +1,5 @@
 .section-144 {
   font-size: 0;
-  color: $main-color;
   @include breakpoint("phone") {
     text-align: center;
   }
@@ -13,13 +12,6 @@
 .section-144__paragraph {
   color: $color-tundora;
   padding: 30px 0;
-}
-
-.section-144__button {
-  &:hover {
-    background-color: $color-ebony-clay;
-    color: $color-white;
-  }
 }
 
 .section-144__image-shape {

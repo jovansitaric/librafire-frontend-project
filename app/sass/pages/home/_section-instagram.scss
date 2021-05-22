@@ -1,0 +1,15 @@
+.section-instagram {
+    padding: 106px 0;
+}
+
+.section-instagram__content-headings, .section-instagram__content-footer {
+    font-size: 16px;
+}
+
+.section-instagram__content-heading {
+    @extend .section-heading;
+}
+
+.section-instagram__content-footer {
+    text-align: center;
+}
