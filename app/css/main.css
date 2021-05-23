@@ -206,6 +206,7 @@ table {
 
 a,
 span,
+small,
 h1,
 h2,
 h3,
@@ -797,6 +798,7 @@ figure {
 
 .footer__bottom-link,
 .footer__bottom-copyright {
+  font-size: 0.875em;
   display: inline-block;
   vertical-align: middle;
 }
