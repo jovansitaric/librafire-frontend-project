@@ -619,7 +619,7 @@ section {
   margin-bottom: 1.875em;
 }
 
-.main-button, .secondary-button {
+.main-button, .secondary-button, .secondary-color-button {
   border-radius: 23px;
   background-color: #ad9b76;
   font-size: 1em;
@@ -630,19 +630,23 @@ section {
   vertical-align: middle;
 }
 
-.main-button:hover, .secondary-button:hover {
+.main-button:hover, .secondary-button:hover, .secondary-color-button:hover {
   color: #2a2c41;
   background-color: white;
-}
-
-.secondary-button {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .secondary-button:hover {
   background-color: #2a2c41;
   color: white;
+}
+
+.secondary-color-button {
+  background-color: #2a2c41;
+}
+
+.secondary-color-button:hover {
+  background-color: white;
+  color: #2a2c41;
 }
 
 .section-144 {
@@ -1065,7 +1069,7 @@ section {
 }
 
 .section-instagram {
-  padding: 106px 0;
+  padding: 90px 0;
   font-size: 0;
 }
 

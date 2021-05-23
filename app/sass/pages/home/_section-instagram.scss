@@ -1,5 +1,5 @@
 .section-instagram {
-  padding: 106px 0;
+  padding: 90px 0;
   font-size: 0;
 }
 
@@ -11,13 +11,6 @@
 .section-instagram__content-heading {
   @extend .section-heading;
 }
-
-// .section-instagram__content-images-column {
-//   margin-right: 30px;
-//   &:last-of-type {
-//     margin-right: 0;
-//   }
-// }
 
 .section-instagram__content-images {
   padding: 30px 0;

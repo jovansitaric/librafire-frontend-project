@@ -13,10 +13,18 @@
 }
 
 .secondary-button {
-  @include inline-block;
   @extend .main-button;
   &:hover {
-    background-color: $color-ebony-clay;
+    background-color: $secondary-color;
     color: $color-white;
+  }
+}
+
+.secondary-color-button {
+  @extend .main-button;
+  background-color: $secondary-color;
+  &:hover {
+    background-color: $color-white;
+    color: $secondary-color;
   }
 }
