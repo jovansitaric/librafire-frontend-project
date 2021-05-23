@@ -20,7 +20,6 @@
   width: $section-144-image-width;
   height: $section-144-image-height;
   background-position: 64% bottom;
-  background-repeat: no-repeat;
   margin-left: auto;
   @include breakpoint("desktop") {
     top: -8.3em;

@@ -1,0 +1,133 @@
+.footer {
+  min-height: 514px;
+  padding: 90px 0;
+  font-size: 0;
+  position: relative;
+}
+
+.footer__content-heading,
+.footer__content-list-item-link,
+.footer__content-info-social-heading {
+  font-size: 1.125em;
+}
+
+.footer__logo,
+.footer__content-heading,
+.footer__content-info-input {
+  margin-bottom: 30px;
+}
+
+.footer__content-column {
+  font-size: 16px;
+  vertical-align: top !important;
+  @include breakpoint("small-laptop") {
+    &:first-of-type,
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:last-of-type {
+      width: 50%;
+    }
+  }
+  @include breakpoint("phone") {
+    &:first-of-type,
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:last-of-type {
+      display: block;
+    }
+  }
+}
+
+.footer__content-list-item,
+.footer__content-info-paragraph,
+.footer__content-info-social-heading {
+  margin-bottom: 20px;
+}
+
+.footer__content-list-item-link {
+  @include inline-block;
+  @at-root .footer__content-list-item-link--location-marker {
+    max-width: 210px;
+  }
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.footer__content-list-item-icons {
+  &.icons {
+    margin-right: 10px;
+  }
+  &:before {
+    font-size: 1em;
+  }
+  &.icon-Icon-material-phone {
+    font-size: 0.6875em;
+  }
+  &.icon-Icon-zocial-email {
+    font-size: 0.5em;
+  }
+}
+
+.footer__content-info-input-form {
+  position: relative;
+}
+
+.footer__content-info-input {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 23px;
+  padding-left: 20px;
+  padding-right: 100px;
+  @include breakpoint("large-desktop") {
+    max-width: 455px;
+  }
+}
+
+.footer__content-info-submit-button {
+  font-size: 0.875em;
+  min-height: 42px;
+  position: absolute;
+  right: 6%;
+  top: 2%;
+  @include breakpoint("mobile-desktop") {
+    right: 0;
+  }
+}
+
+.footer__content-info-social-icons {
+  color: inherit;
+  margin-right: 10px;
+  cursor: pointer;
+  &:before {
+    font-size: 1.1875em;
+  }
+  &:hover:before {
+    color: $color-white;
+  }
+}
+
+.footer__bottom {
+  font-size: 16px;
+  padding-top: 19.5px;
+  padding-bottom: 19.5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__bottom-link,
+.footer__bottom-copyright {
+  @include inline-block;
+}
+
+.footer__bottom-link {
+  &:hover {
+    color: $color-tundora;
+  }
+}
+
+.footer__bottom-copyright {
+  float: right;
+  @extend %clearfix;
+}

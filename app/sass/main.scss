@@ -16,7 +16,10 @@
 
 // Components
 @import "components/hero-section";
+
+// Common components
 @import "components/buttons";
+@import "components/footer";
 
 // Home page
 @import "pages/home/section-144";
@@ -26,6 +29,7 @@
 @import "pages/home/section-takeway";
 @import "pages/home/section-reviews";
 @import "pages/home/section-instagram";
+@import "pages/home/section-reservation";
 
 // Layout
 @import "layout/grid";

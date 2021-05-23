@@ -1,26 +1,49 @@
 .section-instagram {
-  padding: 90px 0;
-  font-size: 0;
+    padding: 90px 0;
+    font-size: 0;
 }
 
 .section-instagram__content-headings,
 .section-instagram__content-footer {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .section-instagram__content-heading {
-  @extend .section-heading;
+    @extend .section-heading;
 }
 
 .section-instagram__content-images {
-  padding: 30px 0;
+    padding: 30px 0;
+}
+
+.section-instagram__content-images-column {
+  @include breakpoint("mobile-desktop") {
+    width: 50%; 
+  }
+  @include breakpoint("mobile-tablet") {
+    width: 100%; 
+  }
 }
 
 .section-instagram__content-images-image {
-  width: 261px;
-  min-height: 261px;
+    width: 261px;
+    min-height: 261px;
+    @include breakpoint("mobile-desktop") {
+      margin: 20px auto;
+    }
+    @include breakpoint("large-desktop") {
+        @at-root .section-instagram__content-images-image--second-image {
+            margin: 0 auto;
+        }
+        @at-root .section-instagram__content-images-image--third-image {
+            margin: 0 auto;
+        }
+        @at-root .section-instagram__content-images-image--fourth-image {
+            margin-left: auto;
+        }
+    }
 }
 
 .section-instagram__content-footer {
-  text-align: center;
+    text-align: center;
 }

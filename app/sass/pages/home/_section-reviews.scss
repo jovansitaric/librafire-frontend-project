@@ -95,5 +95,7 @@
 
 .section-reviews__content-date {
   float: right;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 0.875em;
   @extend %clearfix;
 }

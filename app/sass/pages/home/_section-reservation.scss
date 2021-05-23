@@ -1,0 +1,28 @@
+.section-reservation {
+    min-height: 105px;
+    padding: 32.5px 0;
+}
+
+.section-reservation__content-heading,
+.section-reservation__content-button {
+    @include inline-block;
+}
+
+.section-reservation__content-heading {
+    font-size: 1.125em;
+    font-weight: bold;
+    @include breakpoint("desktop") {
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+    @include breakpoint("mobile-laptop") {
+        margin-bottom: 20px;
+    }
+}
+
+.section-reservation__content-button {
+    @extend %clearfix;
+    @include breakpoint("desktop") {
+        float: right;
+    }
+}

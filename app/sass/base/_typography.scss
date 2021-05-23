@@ -12,6 +12,19 @@
 }
 
 @font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Bold.eot');
+  src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+      url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+      url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.eot");
   src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
@@ -37,14 +50,9 @@ p {
   font-size: 0.875em;
 }
 
-time {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  font-size: 0.875em;
-}
-
 a {
   text-decoration: none;
-  color: $main-text-color;
+  color: inherit;
   @include transition;
   &:hover {
     opacity: 0.9;
@@ -54,6 +62,10 @@ a {
 
 section {
   color: $main-color;
+}
+
+figure {
+  background-repeat: no-repeat;
 }
 
 // Extending classes
