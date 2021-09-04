@@ -617,9 +617,15 @@ figure {
 }
 
 .hero-section__text-heading {
-  font-size: 5.3125em;
+  font-size: 3em;
   color: white;
   max-width: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section__text-heading {
+    font-size: 5.3125em;
+  }
 }
 
 .hero-section__text-paragraph {
